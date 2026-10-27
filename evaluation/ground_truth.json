@@ -1,0 +1,22 @@
+{
+    "database_failure": {
+        "incident_id": "INC-DB-001",
+        "affected_service": "payment-service",
+        "ground_truth": "Database-side failure"
+    },
+    "network_failure": {
+        "incident_id": "INC-NET-001",
+        "affected_service": "payment-service",
+        "ground_truth": "Network or dependency communication failure"
+    },
+    "application_failure": {
+        "incident_id": "INC-APP-001",
+        "affected_service": "payment-service",
+        "ground_truth": "Payment-service internal failure"
+    },
+    "normal_operation": {
+        "incident_id": "INC-NORMAL-001",
+        "affected_service": "payment-service",
+        "ground_truth": "No incident"
+    }
+}

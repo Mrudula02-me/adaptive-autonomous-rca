@@ -1,0 +1,16 @@
+timestamp,database,connection_errors,query_latency,active_connections
+2026-10-01 10:00:00,payment-db,0,80,30
+2026-10-01 10:01:00,payment-db,0,80,30
+2026-10-01 10:02:00,payment-db,0,80,30
+2026-10-01 10:03:00,payment-db,0,80,30
+2026-10-01 10:04:00,payment-db,0,80,30
+2026-10-01 10:05:00,payment-db,0,80,30
+2026-10-01 10:06:00,payment-db,0,80,30
+2026-10-01 10:07:00,payment-db,0,80,30
+2026-10-01 10:08:00,payment-db,0,80,30
+2026-10-01 10:09:00,payment-db,0,80,30
+2026-10-01 10:10:00,payment-db,0,80,30
+2026-10-01 10:11:00,payment-db,0,80,30
+2026-10-01 10:12:00,payment-db,0,80,30
+2026-10-01 10:13:00,payment-db,0,80,30
+2026-10-01 10:14:00,payment-db,0,80,30

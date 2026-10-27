@@ -1,0 +1,27 @@
+
+[
+  {
+    "incident_id": "TEST-001",
+    "ground_truth": "Database-side failure"
+  },
+  {
+    "incident_id": "TEST-002",
+    "ground_truth": "Network or dependency communication failure"
+  },
+  {
+    "incident_id": "TEST-003",
+    "ground_truth": "Payment-service internal failure"
+  },
+  {
+    "incident_id": "TEST-004",
+    "ground_truth": "Database-side failure"
+  },
+  {
+    "incident_id": "TEST-005",
+    "ground_truth": "Network or dependency communication failure"
+  },
+  {
+    "incident_id": "TEST-006",
+    "ground_truth": "Payment-service internal failure"
+  }
+]

@@ -1,0 +1,16 @@
+timestamp,trace_id,source_service,target_service,payment_latency,database_latency
+2026-10-01 10:00:00,application_failure-trace-000,api-gateway,payment-service,120,80
+2026-10-01 10:01:00,application_failure-trace-001,api-gateway,payment-service,120,80
+2026-10-01 10:02:00,application_failure-trace-002,api-gateway,payment-service,120,80
+2026-10-01 10:03:00,application_failure-trace-003,api-gateway,payment-service,120,80
+2026-10-01 10:04:00,application_failure-trace-004,api-gateway,payment-service,120,80
+2026-10-01 10:05:00,application_failure-trace-005,api-gateway,payment-service,120,80
+2026-10-01 10:06:00,application_failure-trace-006,api-gateway,payment-service,120,80
+2026-10-01 10:07:00,application_failure-trace-007,api-gateway,payment-service,700,80
+2026-10-01 10:08:00,application_failure-trace-008,api-gateway,payment-service,700,80
+2026-10-01 10:09:00,application_failure-trace-009,api-gateway,payment-service,700,80
+2026-10-01 10:10:00,application_failure-trace-010,api-gateway,payment-service,700,80
+2026-10-01 10:11:00,application_failure-trace-011,api-gateway,payment-service,700,80
+2026-10-01 10:12:00,application_failure-trace-012,api-gateway,payment-service,700,80
+2026-10-01 10:13:00,application_failure-trace-013,api-gateway,payment-service,120,80
+2026-10-01 10:14:00,application_failure-trace-014,api-gateway,payment-service,120,80

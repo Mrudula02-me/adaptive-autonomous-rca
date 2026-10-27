@@ -1,0 +1,13 @@
+scenario,seed,expected,predicted,correct,anomaly_detected,report_status,confidence,investigation_operations
+database_failure,101,Database-side failure,Database-side failure,True,True,SUPPORTED,0.783,5
+database_failure,202,Database-side failure,Database-side failure,True,True,SUPPORTED,0.783,5
+database_failure,303,Database-side failure,Database-side failure,True,True,SUPPORTED,0.783,5
+network_failure,101,Network or dependency communication failure,Network or dependency communication failure,True,True,PROVISIONAL,0.442,5
+network_failure,202,Network or dependency communication failure,Network or dependency communication failure,True,True,PROVISIONAL,0.442,5
+network_failure,303,Network or dependency communication failure,Network or dependency communication failure,True,True,PROVISIONAL,0.442,5
+application_failure,101,Payment-service internal failure,Payment-service internal failure,True,True,PROVISIONAL,0.442,4
+application_failure,202,Payment-service internal failure,Payment-service internal failure,True,True,PROVISIONAL,0.442,4
+application_failure,303,Payment-service internal failure,Payment-service internal failure,True,True,PROVISIONAL,0.442,4
+normal_operation,101,No incident,No incident,True,False,NO_INCIDENT,0.0,0
+normal_operation,202,No incident,No incident,True,False,NO_INCIDENT,0.0,0
+normal_operation,303,No incident,No incident,True,False,NO_INCIDENT,0.0,0
