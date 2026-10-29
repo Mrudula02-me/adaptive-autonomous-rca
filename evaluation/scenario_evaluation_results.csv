@@ -1,0 +1,5 @@
+scenario,incident_id,expected,predicted,correct,anomaly_detected,report_status,confidence,investigation_operations,agents_called
+database_failure,INC-DB-001,Database-side failure,Database-side failure,True,True,SUPPORTED,1.0,6,"anomaly_agent, log_agent, metric_agent, hypothesis_agent, trace_agent, database_agent, critic_agent"
+network_failure,INC-NET-001,Network or dependency communication failure,Network or dependency communication failure,True,True,SUPPORTED,0.708,6,"anomaly_agent, log_agent, metric_agent, hypothesis_agent, trace_agent, database_agent, critic_agent"
+application_failure,INC-APP-001,Payment-service internal failure,Payment-service internal failure,True,True,SUPPORTED,0.783,6,"anomaly_agent, log_agent, metric_agent, hypothesis_agent, trace_agent, database_agent, critic_agent"
+normal_operation,INC-NORMAL-001,No incident,No incident,True,False,NO_INCIDENT,0.0,0,anomaly_agent

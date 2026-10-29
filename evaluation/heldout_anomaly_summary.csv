@@ -1,0 +1,11 @@
+scenario,method,observations,actual_incidents,predicted_incidents,accuracy,precision,recall,f1_score,true_negatives,false_positives,false_negatives,true_positives,false_positive_rate
+database_failure,Isolation Forest,200,6,19,0.935,0.3157894736842105,1.0,0.48,181,13,0,6,0.06701030927835051
+database_failure,Threshold baseline,200,6,6,1.0,1.0,1.0,1.0,194,0,0,6,0.0
+network_failure,Isolation Forest,200,6,13,0.965,0.46153846153846156,1.0,0.631578947368421,187,7,0,6,0.03608247422680412
+network_failure,Threshold baseline,200,6,6,1.0,1.0,1.0,1.0,194,0,0,6,0.0
+application_failure,Isolation Forest,200,6,19,0.935,0.3157894736842105,1.0,0.48,181,13,0,6,0.06701030927835051
+application_failure,Threshold baseline,200,6,6,1.0,1.0,1.0,1.0,194,0,0,6,0.0
+normal_operation,Isolation Forest,200,0,10,0.95,0.0,0.0,0.0,190,10,0,0,0.05
+normal_operation,Threshold baseline,200,0,0,1.0,0.0,0.0,0.0,200,0,0,0,0.0
+ALL_SCENARIOS,Isolation Forest,800,18,61,0.94625,0.29508196721311475,1.0,0.45569620253164556,739,43,0,18,0.054987212276214836
+ALL_SCENARIOS,Threshold baseline,800,18,18,1.0,1.0,1.0,1.0,782,0,0,18,0.0

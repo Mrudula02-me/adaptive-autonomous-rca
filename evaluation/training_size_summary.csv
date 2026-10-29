@@ -1,0 +1,5 @@
+training_size,observations,actual_incidents,predicted_incidents,precision,recall,f1_score,true_negatives,false_positives,false_negatives,true_positives,false_positive_rate
+20,120,20,10,0.5,0.25,0.3333333333333333,95,5,15,5,0.05
+50,120,20,13,0.6923076923076923,0.45,0.5454545454545454,96,4,11,9,0.04
+100,120,20,25,0.8,1.0,0.8888888888888888,95,5,0,20,0.05
+150,120,20,25,0.8,1.0,0.8888888888888888,95,5,0,20,0.05
