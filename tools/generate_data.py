@@ -207,7 +207,10 @@ def generate_logs(scenario: str) -> pd.DataFrame:
 # ============================================================
 
 def generate_traces(scenario: str) -> pd.DataFrame:
-    """Generate traces with different dependency latency patterns."""
+    """Generate traces with scenario-specific diagnostic evidence."""
+
+    if scenario not in SCENARIOS:
+        raise ValueError(f"Unknown scenario: {scenario}")
 
     traces = []
 
@@ -215,21 +218,42 @@ def generate_traces(scenario: str) -> pd.DataFrame:
         timestamp = START_TIME + pd.Timedelta(minutes=minute)
         is_incident_window = 7 <= minute <= 12
 
+        # Default values represent healthy operation.
         payment_latency = 120
         database_latency = 80
+        dependency_latency = 40
+        span_status = "OK"
+        error_type = "NONE"
+        downstream_service = "payment-service"
 
         if is_incident_window:
             if scenario == "database_failure":
                 payment_latency = 850
                 database_latency = 800
+                dependency_latency = 800
+                span_status = "ERROR"
+                error_type = "DATABASE_TIMEOUT"
+                downstream_service = "payment-db"
 
             elif scenario == "network_failure":
                 payment_latency = 750
                 database_latency = 80
+                dependency_latency = 650
+                span_status = "ERROR"
+                error_type = "DEPENDENCY_TIMEOUT"
+                downstream_service = "payment-service"
 
             elif scenario == "application_failure":
                 payment_latency = 700
                 database_latency = 80
+                dependency_latency = 40
+                span_status = "ERROR"
+                error_type = "APPLICATION_EXCEPTION"
+                downstream_service = "payment-service"
+
+            elif scenario == "normal_operation":
+                # Keep all diagnostic fields at their healthy defaults.
+                pass
 
         traces.append({
             "timestamp": timestamp,
@@ -238,10 +262,13 @@ def generate_traces(scenario: str) -> pd.DataFrame:
             "target_service": "payment-service",
             "payment_latency": payment_latency,
             "database_latency": database_latency,
+            "dependency_latency": dependency_latency,
+            "span_status": span_status,
+            "error_type": error_type,
+            "downstream_service": downstream_service,
         })
 
     return pd.DataFrame(traces)
-
 
 # ============================================================
 # 5. Generate database signals

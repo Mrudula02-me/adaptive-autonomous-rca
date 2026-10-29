@@ -113,6 +113,7 @@ class HypothesisAgent:
         ).lower()
 
     def analyze(self, state: RCAState) -> dict[str, Any]:
+        """Generate hypotheses by matching candidate keywords."""
         evidence = state.get("evidence", [])
         hypotheses = []
 
